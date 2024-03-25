@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-public class TradExample {
+public class ProductApp {
     public static void main(String[] args) {
         try {
             Map<String,String> argMap = ArgsUtils.argsToMap(args);

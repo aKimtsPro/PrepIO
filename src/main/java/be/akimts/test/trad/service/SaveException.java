@@ -1,4 +1,4 @@
-package be.akimts.test.trad.interfaces;
+package be.akimts.test.trad.service;
 
 import java.io.File;
 

@@ -1,33 +1,28 @@
-package be.akimts.test.interfaces;
+package be.akimts.test.trad.interfaces;
 
 import be.akimts.test.models.Product;
+import be.akimts.test.trad.service.ProductService;
+import be.akimts.test.trad.service.SaveException;
 
-import java.io.File;
 import java.util.*;
 
 public class MainMenu {
-
-    private final Set<Product> products = new HashSet<>();
     private final Map<String,String> traductions;
-    private final File saveFile;
+    private final ProductService productService;
     private final Scanner scanner = new Scanner(System.in);
-    private long nextId;
 
 
-    public MainMenu(Map<String, String> traductions, File saveFile) {
+    public MainMenu(
+            Map<String, String> traductions,
+            ProductService productService
+    ) {
         if( traductions == null )
             throw new IllegalArgumentException();
-        if( saveFile == null )
+        if( productService == null )
             throw new IllegalArgumentException();
         this.traductions = traductions;
-        this.saveFile = saveFile;
-        init();
+        this.productService = productService;
     }
-
-    private void init(){
-        this.nextId = 1;
-    }
-
 
     public void start(){
         String command;
@@ -92,15 +87,16 @@ public class MainMenu {
             try {
                 String valueString = scanner.nextLine().trim();
                 if (type == Long.class) {
-                    return (T) Long.valueOf(Long.parseLong(valueString));
-                } else if (type == String.class) {
-                    return (T) valueString;
+                    return (T) Long.valueOf( Long.parseLong(valueString) );
                 } else if (type == Double.class) {
                     return (T) Double.valueOf( Double.parseDouble(valueString) );
+                } else if (type == String.class) {
+                    return (T) valueString;
                 }
             }
             catch (Exception ex){
                 System.out.println("Invalid value type");
+                System.out.print(message);
             }
         } while (true);
     }
@@ -115,32 +111,34 @@ public class MainMenu {
     }
     
     private void handleDisplay(){
-        products.forEach(System.out::println);
+        productService.getAll()
+                .forEach(System.out::println);
     }
     private void handleAdd(){
-        long id = this.nextId++;
         String model = askForValue(String.class, "> model(string): ");
         String brand = askForValue(String.class, "> brand(string): ");
         double price = askForValue(Double.class, "> price(number): ");
-        Product toAdd =  new Product(id,model,brand,price);
-        this.products.add( toAdd );
+
+        Product toAdd = productService.add(model,brand, price);
+
         System.out.println("Added: " + toAdd);
     }
     private void handleRemove(){
-        String[] possibleIds = products.stream()
+        String[] possibleIds = productService.getAll()
+                .stream()
                 .map(p -> p.id().toString())
                 .toArray(String[]::new);
         String idString = askForCommand("Please choose an id:",possibleIds);
-        long id = Long.parseLong(idString);
-        products.remove(
-                products.stream()
-                        .filter(p -> p.id() == id)
-                        .findFirst()
-                        .orElseThrow()
-        );
+
+        productService.remove(Long.parseLong(idString));
     }
     private void handleSave(){
-        System.out.println("not implemented");
+        try {
+            productService.save();
+        }
+        catch (SaveException exception){
+            System.out.println("Save failed: " + exception.getMessage());
+        }
     }
     private void handleQuit(){
         System.out.println("Bye!");

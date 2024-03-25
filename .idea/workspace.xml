@@ -4,18 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22b1bed1-9999-4dcc-b75e-58d0b95745cd" name="Changes" comment="" />
+    <list default="true" id="22b1bed1-9999-4dcc-b75e-58d0b95745cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/models/CSVSerializable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/ProductApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/ProductApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/interfaces/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/interfaces/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/service/SaveException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/service/SaveException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/utils/ArgsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/utils/ArgsUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/utils/KeyValueReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/akimts/test/trad/utils/KeyValueReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.keyvalue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.keyvalue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/trad/en.keyvalue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trad/en.keyvalue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/trad/fr.keyvalue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trad/fr.keyvalue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2e8qgKjlVCwwUlcUazr6dvAM6tU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,19 +52,73 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.ProductApp.executor": "Run",
+    "Application.TradExample.executor": "Run",
+    "JAR Application.PrepIO-1.0-SNAPSHOT.jar.executor": "Run",
+    "Maven.PrepIO [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
-      </set>
-    </attachedChunks>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\akimt\IdeaProjects\PrepIO\src\main\resources\trad" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ProductApp">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.akimts.test.Main" />
+      <module name="PrepIO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.akimts.test.trad.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.akimts.test.trad.ProductApp" />
+      <module name="PrepIO" />
+      <option name="PROGRAM_PARAMETERS" value="--saveFile=csv/products2.csv --traduction=fr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.akimts.test.trad.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrepIO-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/PrepIO-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ProductApp" />
+      <item itemvalue="JAR Application.PrepIO-1.0-SNAPSHOT.jar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProductApp" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JAR Application.PrepIO-1.0-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -46,8 +128,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711296668391</updated>
-      <workItem from="1711296670765" duration="12000" />
+      <workItem from="1711296670765" duration="1190000" />
+      <workItem from="1711297877974" duration="14000" />
+      <workItem from="1711297907930" duration="13442000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

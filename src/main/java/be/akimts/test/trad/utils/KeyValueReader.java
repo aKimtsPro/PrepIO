@@ -1,4 +1,4 @@
-package be.akimts.test.utils;
+package be.akimts.test.trad.utils;
 
 import java.io.*;
 import java.util.AbstractMap;

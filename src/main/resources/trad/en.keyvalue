@@ -3,3 +3,4 @@ read-all:Display all products
 add:Add a product
 remove:Remove a product
 save:Save
+quit:Quit
